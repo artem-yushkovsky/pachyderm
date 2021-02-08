@@ -7,7 +7,7 @@ import (
 	"github.com/pachyderm/pachyderm/v2/src/internal/storage/chunk"
 	"github.com/pachyderm/pachyderm/v2/src/internal/storage/fileset"
 	"github.com/pachyderm/pachyderm/v2/src/internal/storage/track"
-	pfsserver "github.com/pachyderm/pachyderm/v2/src/server/pfs/server/"
+	pfsserver "github.com/pachyderm/pachyderm/v2/src/server/pfs/server"
 )
 
 // DesiredClusterState is the set of migrations to apply to run pachd at the current version.
