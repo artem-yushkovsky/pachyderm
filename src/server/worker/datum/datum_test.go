@@ -66,7 +66,7 @@ func TestSet(t *testing.T) {
 		// Check output.
 		require.NoError(t, withTmpDir(func(storageRoot string) error {
 			require.NoError(t, WithSet(c, storageRoot, func(s *Set) error {
-				fsi := NewFileSetIterator(c, outputRepo, outputCommit.ID)
+				fsi := NewCommitIterator(c, outputRepo, outputCommit.ID)
 				return fsi.Iterate(func(meta *Meta) error {
 					require.Equal(t, allInputs[0], meta.Inputs)
 					allInputs = allInputs[1:]
